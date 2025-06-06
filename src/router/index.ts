@@ -196,16 +196,6 @@ export const asyncRoutes: RouteRecordRaw[] = [
           roles: ["admin"], // 只有管理员可以访问
           svgIcon: "user-management"
         }
-      },
-      {
-        path: "organization-management",
-        component: () => import("@/views/organization-management/index.vue"),
-        name: "OrganizationManagement",
-        meta: {
-          title: "组织管理",
-          roles: ["admin"], // 只有管理员可以访问
-          svgIcon: "organization-management"
-        }
       }
     ]
   },
