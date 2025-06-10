@@ -2,7 +2,8 @@ import { request } from "@/utils/service"
 import type {
   ApiResponse,
   PageData,
-  project
+  project,
+  OrganizationInfo
 } from "@/api/projectManagement/shared/projectManagement/types/projectManagement"
 
 /**
@@ -41,5 +42,13 @@ export function deleteProjectApi(projectId: number) {
   return request<ApiResponse<void>>({
     url: `/modProjects/delete/${projectId}`,
     method: "delete"
+  })
+}
+
+// 获取用户组织信息
+export function getUserOrganizationApi() {
+  return request<ApiResponse<OrganizationInfo>>({
+    url: "/user/organization", // 根据实际后端路径调整
+    method: "get"
   })
 }

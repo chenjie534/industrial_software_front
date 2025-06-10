@@ -25,3 +25,9 @@ export interface PageData<T> {
   size: number
   current: number
 }
+
+// 定义组织信息类型
+export interface OrganizationInfo {
+  orgId: number
+  orgName: string
+}
