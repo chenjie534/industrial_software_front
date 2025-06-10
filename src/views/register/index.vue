@@ -84,11 +84,11 @@ const handlereg = () => {
     <ThemeSwitch class="theme-switch" />
     <div class="login-card">
       <div class="title">
-        <img src="@/assets/layouts/logos1.jpg" style="width: 110px; height: 60px; margin-right: 10px" />
+        <img src="@/assets/layouts/logos1.jpg" style="width: 110px; height: 60px; margin-right: 10px" alt="" />
         <h2>注册</h2>
       </div>
       <div class="content">
-        <el-form ref="loginFormRef" :model="loginFormData" :rules="loginFormRules" @keyup.enter="handleLogin">
+        <el-form ref="loginFormRef" :model="loginFormData" :rules="loginFormRules" @keyup.enter="handlereg">
           <el-form-item prop="username">
             <el-input
               v-model.trim="loginFormData.username"
@@ -163,7 +163,7 @@ const handlereg = () => {
         .el-image {
           width: 100px;
           height: 40px;
-          border-left: 0px;
+          border-left: 0;
           user-select: none;
           cursor: pointer;
           text-align: center;

@@ -13,7 +13,7 @@ import {
   ElPagination
 } from "element-plus"
 import type { FormInstance, FormRules } from "element-plus"
-import { getPageUsersApi, updateUserInfoApi, deleteUserApi, resetPasswordApi } from "@/api/userManagement/index"
+import { getPageUsersApi, updateUserInfoApi, deleteUserApi, resetPasswordApi } from "@/api/userManagement"
 import type { User } from "@/api/userManagement/types/userManagement"
 
 // 用户数据

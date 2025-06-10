@@ -98,7 +98,7 @@ onMounted(() => {
     <ThemeSwitch class="theme-switch" />
     <div class="login-card">
       <div class="title">
-        <img src="@/assets/layouts/logos1.jpg" style="width: 110px; height: 60px; margin-right: 10px" />
+        <img src="@/assets/layouts/logos1.jpg" style="width: 110px; height: 60px; margin-right: 10px" alt="" />
         <h2>航空专用动力学仿真软件</h2>
       </div>
       <div class="content">
